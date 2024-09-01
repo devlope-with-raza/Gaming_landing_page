@@ -1,0 +1,166 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Handjet" ;
+    font-weight: 900;
+    /* font-size: 25px; */
+    columns: darkgrey;
+    
+}
+html,body
+{
+    height: 100%;
+    width: 100%;
+}
+#main
+{
+    
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+#left
+{
+    height: 100%;
+    width: 40%;
+    position: relative;
+    background-color: rgba(214, 214, 214,0.5);
+    
+}
+#left-nav
+{
+    height: 100%;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+}
+#back a 
+{
+    text-decoration: none;
+    color: black;
+}
+
+#left-nav-right
+{
+    display: flex;
+    justify-items: center;
+}
+
+
+#left-nav-right a
+{
+    margin-right: 40px;
+    text-decoration: none;
+    
+    #home
+    {
+        color: black;
+        border-bottom: 2px solid black;
+        padding-bottom: 5px;
+    
+    }
+    #about
+    {
+        color: rgba(0,0,0,0.4);
+    }
+   
+    #bird
+    {
+        color: rgb(62, 97, 255);
+    }
+
+}
+#content
+{
+    position: absolute;
+    top: 40%; /* if we want in center always use top : 50 ; */
+    left: 20%;  /* if we want in center always use left : 50; */
+    right: 20%;
+    translate: -50%,-50%;
+    font-size: 20px;
+    word-spacing: 2px;
+
+   
+}
+#content h1
+{
+    font-size: 90px;
+}
+#content p
+{
+    font-size: 17px;
+    opacity: .7;
+    line-height: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+#content a
+{
+    text-decoration: none;
+    color: rgb(9, 26, 102);
+    opacity: .8;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 3px solid rgb(243, 97, 92);
+    padding-bottom: 2px;
+}
+#right
+{
+    height: 100%;
+    width: 60%;
+    background-color: skyblue;
+}
+#right-top
+{
+    height: 50%;
+    width: 100%;
+    background-color: blueviolet;
+    display: flex;
+}
+#right-top-left
+{
+    height: 100%;
+    width: 55%;
+    background-image: url("112377.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+#right-top-right
+{
+    height: 100%;
+    width: 45%;
+    background-image: url("2121733.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#right-bottom
+{
+    height: 50%;
+    width: 100%;
+    background-image: url("wp7173841.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media(max-width:800px)
+{
+    #main
+    {
+        flex-direction: column;
+    }
+    #main #left
+    {
+        width: 100%;
+    
+    }
+    #main #right
+    {
+        width: 100%;
+    }
+   
+}
